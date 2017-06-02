@@ -1,0 +1,235 @@
+﻿<Window x:Class="Butterflies.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cc="clr-namespace:ButterflyControl;assembly=ButterflyControl"
+        WindowStyle="None" WindowState="Maximized"
+        Loaded="Window_Loaded">
+  <Window.Resources>
+    <Style TargetType="Button">
+      <Setter Property="Height" Value="30"/>
+      <Setter Property="Width" Value="200"/>
+      <Setter Property="Cursor" Value="Hand"/>
+      <Setter Property="HorizontalAlignment" Value="Left"/>
+      <Setter Property="VerticalAlignment" Value="Top"/>
+    </Style>
+  </Window.Resources>
+  <Window.Clip>
+    <EllipseGeometry x:Name="MainClip"
+                     Center="50, 50" RadiusX="2000" RadiusY="2000"/>
+  </Window.Clip>
+
+  <Grid x:Name="MainGrid">
+      <Grid.Background>
+        <ImageBrush ImageSource="Images/IMG_0104.jpg" Stretch="Fill" Opacity="1"/>
+      </Grid.Background>
+      <Button Content="Quit"
+            IsCancel="True"
+            Opacity="0"
+            Click="Button_Click"/>
+
+      <cc:Butterfly x:Name="Butterfly1" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="50"
+                  Opacity="0" AnimationDuration="10"
+                  WingImage="Images/IMG_1003bright.jpg"
+                  StartAngle="0" Scale="0.5"/>
+
+    <cc:Butterfly x:Name="Butterfly2b" 
+                  Margin="100"
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="22.5" Scale="0.5"/>
+   
+    <cc:Butterfly x:Name="Butterfly2c" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="45" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2d" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="67.5" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2e" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="90" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2f" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="112.5" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2g" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="135" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2h" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="157.5" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2i" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="180" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2j" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="202.5" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2k" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="225" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2l" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="247.5" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2m" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="270" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2n" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="292.5" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2o" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="315" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2p" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="337.5" Scale="0.5"/>
+
+      <cc:Butterfly x:Name="Butterfly2a" 
+                  HorizontalAlignment="Left" VerticalAlignment="Top"
+                  Margin="100" 
+                  Opacity="0"
+                  WingImage="Images/Wing1.png"
+                  StartAngle="0" Scale="0.5"/>
+
+      <MediaElement Name="Video1" 
+                      HorizontalAlignment="Left" VerticalAlignment="Top"
+                      Margin="300, 100, 0, 0"
+                      LoadedBehavior="Play" 
+                      Source="Videos\Butterfly.wmv"
+                      Stretch="Fill" Volume="0"
+                      MediaFailed="Video1_MediaFailed"
+                      Height="400" Width="400">
+        <MediaElement.Clip>
+          <GeometryGroup>
+            <RectangleGeometry x:Name="VideoClip1" Rect="0, 0, 200, 200"/>
+          </GeometryGroup>
+        </MediaElement.Clip>
+      </MediaElement>
+
+      <MediaElement Name="Video2" 
+                      HorizontalAlignment="Left" VerticalAlignment="Top"
+                      Margin="400, 100, 0, 0"
+                      LoadedBehavior="Play" 
+                      Source="Videos\Butterfly.wmv"
+                      Stretch="Fill" Volume="0"
+                      MediaFailed="Video1_MediaFailed"
+                      Height="400" Width="400">
+        <MediaElement.Clip>
+          <GeometryGroup>
+            <RectangleGeometry x:Name="VideoClip2" Rect="200, 0, 200, 200"/>
+          </GeometryGroup>
+        </MediaElement.Clip>
+      </MediaElement>
+
+      <MediaElement Name="Video3" 
+                      HorizontalAlignment="Left" VerticalAlignment="Top"
+                      Margin="100, 300, 0, 0"
+                      LoadedBehavior="Play" 
+                      Source="Videos\Butterfly.wmv"
+                      Stretch="Fill" Volume="0"
+                      MediaFailed="Video1_MediaFailed"
+                      Height="400" Width="400">
+        <MediaElement.Clip>
+          <GeometryGroup>
+            <RectangleGeometry x:Name="VideoClip3" Rect="0, 200, 200, 200"/>
+          </GeometryGroup>
+        </MediaElement.Clip>
+      </MediaElement>
+
+      <MediaElement Name="Video4" 
+                      HorizontalAlignment="Left" VerticalAlignment="Top"
+                      Margin="500, 300, 0, 0"
+                      LoadedBehavior="Play" 
+                      Source="Videos\Butterfly.wmv"
+                      Stretch="Fill" Volume="0"
+                      MediaFailed="Video1_MediaFailed"
+                      MediaEnded="Video4_MediaEnded"
+                      Height="400" Width="400">
+        <MediaElement.Clip>
+          <GeometryGroup>
+            <RectangleGeometry x:Name="VideoClip4" Rect="200, 200, 200, 200"/>
+          </GeometryGroup>
+        </MediaElement.Clip>
+      </MediaElement>
+
+      <Rectangle x:Name="Rec0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"
+               Height="200" Width="200"
+               Margin="900, 430, 10, 0">
+        <Rectangle.Fill>
+          <ImageBrush ImageSource="Images/Wing2.png" Viewport="0, 0, .5, .5" TileMode="FlipXY" Stretch="Fill"/>
+        </Rectangle.Fill>
+      </Rectangle>
+      <Rectangle x:Name="Rec1" 
+                 Opacity="0"
+               HorizontalAlignment="Left" VerticalAlignment="Top"
+               Height="200" Width="200"
+               Margin="900, 10, 10, 0">
+      <Rectangle.Fill>
+        <ImageBrush ImageSource="Images/IMG_1003bright.jpg" Stretch="Fill"/>
+      </Rectangle.Fill>
+    </Rectangle>
+    <Rectangle x:Name="Rec2"
+               HorizontalAlignment="Left" VerticalAlignment="Top"
+               Height="200" Width="200"
+               Margin="900, 220, 10, 0">
+      <Rectangle.Fill>
+        <ImageBrush ImageSource="Images/IMG_0066a.jpg" Viewport="0, 0, .5, .5" TileMode="FlipXY" Stretch="Fill"/>
+      </Rectangle.Fill>
+    </Rectangle>
+    </Grid>
+</Window>
